@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace HotelLibrary
 {
+
+    public enum TipologiaCamera
+    {
+        Singola,
+        Doppia
+    }
     public class Camera
     {
 
         public int Numero { get; set; }
         public string Descrizione { get; set; }
-        public string Tipologia { get; set; }
+        public TipologiaCamera Tipologia { get; set; }
 
 
-        public Camera(int numero, string descrizione, string tipologia)
-        {
-            Numero = numero;
-            Descrizione = descrizione;
-            Tipologia = tipologia;
-        }
+
 
         public override string ToString()
         {

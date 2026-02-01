@@ -8,19 +8,9 @@
         public string Citta { get; set; }
         public string Provincia { get; set; }
         public string Email { get; set; }
-        public int NumeroTelefono { get; set; }
+        public string Telefono { get; set; }
+        public string Cellulare { get; set; }
 
-
-        public Cliente(string codiceFiscale, string cognome, string nome, string citta, string provincia, string email, int numeroTelefono)
-        {
-            CodiceFiscale = codiceFiscale;
-            Cognome = cognome;
-            Nome = nome;
-            Citta = citta;
-            Provincia = provincia;
-            Email = email;
-            NumeroTelefono = numeroTelefono;
-        }
 
         public override string ToString()
         {
